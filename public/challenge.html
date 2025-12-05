@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <title>挑戰 - 臺幣速算王</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1 id="title">挑戰</h1>
+      <div style="display:flex; gap:8px; align-items:center;">
+        <button id="retryBtn" class="small">再來一次</button>
+        <button id="backBtn" class="small">返回首頁</button>
+      </div>
+    </header>
+    <section id="challengeArea">
+      <div id="prompt"></div>
+      <form id="answerForm">
+        <label for="answerInput">答案（僅接受整數）：</label>
+        <input id="answerInput" name="answer" type="number" step="1" required autofocus />
+        <button type="submit" class="btn">提交</button>
+      </form>
+      <div id="timer">計時：0.000 秒</div>
+      <div id="result"></div>
+    </section>
+    <section id="historyArea">
+      <h2>挑戰記錄</h2>
+      <div id="historyList"></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
